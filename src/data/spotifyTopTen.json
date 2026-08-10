@@ -1,12 +1,62 @@
 [
-  { "rank": 1, "track": "[Track name]", "artist": "[Artist]" },
-  { "rank": 2, "track": "[Track name]", "artist": "[Artist]" },
-  { "rank": 3, "track": "[Track name]", "artist": "[Artist]" },
-  { "rank": 4, "track": "[Track name]", "artist": "[Artist]" },
-  { "rank": 5, "track": "[Track name]", "artist": "[Artist]" },
-  { "rank": 6, "track": "[Track name]", "artist": "[Artist]" },
-  { "rank": 7, "track": "[Track name]", "artist": "[Artist]" },
-  { "rank": 8, "track": "[Track name]", "artist": "[Artist]" },
-  { "rank": 9, "track": "[Track name]", "artist": "[Artist]" },
-  { "rank": 10, "track": "[Track name]", "artist": "[Artist]" }
+  {
+    "rank": 1,
+    "track": "Alvafro",
+    "artist": "LATIN MAFIA, Fred again..",
+    "url": "https://open.spotify.com/track/5PE1xJ7cIpJbVqqrKtQxJJ"
+  },
+  {
+    "rank": 2,
+    "track": "Te Estoy Correteando",
+    "artist": "LATIN MAFIA, Fred again..",
+    "url": "https://open.spotify.com/track/5B579RUazOpBcuxjTZWnMs"
+  },
+  {
+    "rank": 3,
+    "track": "Sun Has Set",
+    "artist": "beabadoobee",
+    "url": "https://open.spotify.com/track/3CnEw0mRAXVlLw36iL0mbe"
+  },
+  {
+    "rank": 4,
+    "track": "MUTT",
+    "artist": "Leon Thomas",
+    "url": "https://open.spotify.com/track/2uvE4L5ZsYKpv8hbK4TIOt"
+  },
+  {
+    "rank": 5,
+    "track": "Quiereme",
+    "artist": "LATIN MAFIA, Fred again.., bby",
+    "url": "https://open.spotify.com/track/16WxbPKGXnphCK8UsilodJ"
+  },
+  {
+    "rank": 6,
+    "track": "the feeling",
+    "artist": "Steve Lacy",
+    "url": "https://open.spotify.com/track/1OWBh1eVxUdA1Z6UA8r4nh"
+  },
+  {
+    "rank": 7,
+    "track": "Psycho Shit",
+    "artist": "The Strokes",
+    "url": "https://open.spotify.com/track/1bsPoGSrs4Vv8iuUs9GQI7"
+  },
+  {
+    "rank": 8,
+    "track": "Dine N'Dash",
+    "artist": "The Strokes",
+    "url": "https://open.spotify.com/track/22a006OJm48zH87SkPpSVx"
+  },
+  {
+    "rank": 9,
+    "track": "Go Outside Intro (feat. Wallo267)",
+    "artist": "Larry June, Wallo267",
+    "url": "https://open.spotify.com/track/4e5f4kvBdFKzr3zeGFjzk2"
+  },
+  {
+    "rank": 10,
+    "track": "Hey Hey",
+    "artist": "Fred again.., LATIN MAFIA",
+    "url": "https://open.spotify.com/track/5MQ3m470DyReUYdRjWnlST"
+  }
 ]
