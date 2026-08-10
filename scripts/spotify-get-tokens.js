@@ -9,6 +9,7 @@
 //    Copy the `code` value from the browser's address bar, then run:
 //      SPOTIFY_CLIENT_ID=xxx SPOTIFY_CLIENT_SECRET=yyy SPOTIFY_AUTH_CODE=zzz node scripts/spotify-get-tokens.js
 // 4. Save the printed refresh token as the SPOTIFY_REFRESH_TOKEN GitHub secret.
+require("dotenv").config();
 
 const { SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REDIRECT_URI, SPOTIFY_AUTH_CODE } = process.env;
 

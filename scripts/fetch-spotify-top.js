@@ -1,6 +1,8 @@
 // Run by the "Update Spotify Top 10" GitHub Action. Fetches the current
 // top 10 tracks and writes them to src/data/spotifyTopTen.json.
 
+require("dotenv").config();
+
 const fs = require("fs");
 const path = require("path");
 
