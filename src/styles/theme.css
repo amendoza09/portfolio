@@ -1,0 +1,26 @@
+:root {
+  --color-bg: #ffffff;
+  --color-bg-alt: #f4f3ef;
+  --color-border: rgba(15, 15, 14, 0.12);
+  --color-text: #0f0f0e;
+  --color-text-dim: #6b6a65;
+  --color-accent: #ff4a1c;
+  --color-accent-soft: rgba(255, 74, 28, 0.1);
+  --color-danger: #c0392b;
+  --color-success: #1c7a4a;
+
+  --space-xs: 0.5rem;
+  --space-sm: 0.875rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+
+  --radius-md: 0px;
+  --radius-lg: 0px;
+
+  --font-sans: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-display: "Space Grotesk", var(--font-sans);
+
+  --container-max: 1240px;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}

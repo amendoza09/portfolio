@@ -1,0 +1,68 @@
+.personal-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: start;
+}
+
+.personal-bio {
+  margin: 0;
+  max-width: 42ch;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-text-dim);
+}
+
+.personal-top-ten h3 {
+  margin: 0 0 var(--space-md);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.personal-top-ten ol {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-top-ten li {
+  display: grid;
+  grid-template-columns: 2rem 1fr auto;
+  align-items: baseline;
+  gap: var(--space-sm);
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.personal-top-ten li:last-child {
+  border-bottom: none;
+}
+
+.top-ten-rank {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--color-accent);
+  font-size: 0.9rem;
+}
+
+.top-ten-track {
+  font-weight: 500;
+  transition: color 0.2s var(--ease);
+}
+
+a.top-ten-track:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.top-ten-artist {
+  color: var(--color-text-dim);
+  font-size: 0.85rem;
+  text-align: right;
+}
+
+@media (max-width: 720px) {
+  .personal-grid {
+    grid-template-columns: 1fr;
+  }
+}

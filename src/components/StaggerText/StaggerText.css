@@ -1,0 +1,20 @@
+.stagger-text {
+  display: inline;
+}
+
+.stagger-text-mask {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.stagger-text-word {
+  display: inline-block;
+  transform: translateY(110%);
+  transition: transform 0.75s var(--ease);
+  will-change: transform;
+}
+
+.stagger-text-word-visible {
+  transform: translateY(0);
+}
