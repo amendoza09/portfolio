@@ -1,6 +1,7 @@
 import Reveal from "../../components/Reveal/Reveal";
-import StaggerText from "../../components/StaggerText/StaggerText";
-import TOP_TEN from "../../data/spotifyTopTen.json";
+import RippleTitle from "../../components/RippleTitle/RippleTitle";
+import TOP_TRACKS from "../../data/spotifyTop.json";
+import CURRENTLY_READING from "../../data/goodreadsCurrentlyReading.json";
 import "./Personal.css";
 
 export default function Personal() {
@@ -11,7 +12,7 @@ export default function Personal() {
           <Reveal as="p" className="eyebrow">
             [Personal]
           </Reveal>
-          <StaggerText as="h2" className="section-heading" text="Beyond work" />
+          <RippleTitle id="personal" as="h2" className="section-heading" text="Beyond work" />
           <Reveal as="p" className="personal-bio">
             I'm a Computer Science graduate from the University of Georgia (B.S.
             2025), based in Charlotte, NC. [Add a couple lines here about your
@@ -19,24 +20,43 @@ export default function Personal() {
           </Reveal>
         </div>
 
-        <Reveal as="div" className="personal-top-ten" delay={120}>
-          <h3>My Spotify Top 10</h3>
-          <ol>
-            {TOP_TEN.map((item) => (
-              <li key={item.rank}>
-                <span className="top-ten-rank">{String(item.rank).padStart(2, "0")}</span>
-                {item.url ? (
-                  <a className="top-ten-track" href={item.url} target="_blank" rel="noreferrer">
-                    {item.track}
-                  </a>
-                ) : (
-                  <span className="top-ten-track">{item.track}</span>
-                )}
-                <span className="top-ten-artist">{item.artist}</span>
-              </li>
-            ))}
-          </ol>
-        </Reveal>
+        <div className="personal-side">
+          <Reveal as="div" className="personal-top-ten" delay={120}>
+            <h3>My Spotify Top 5</h3>
+            <ol>
+              {TOP_TRACKS.map((item) => (
+                <li key={item.rank}>
+                  <span className="top-ten-rank">{String(item.rank).padStart(2, "0")}</span>
+                  {item.url ? (
+                    <a className="top-ten-track" href={item.url} target="_blank" rel="noreferrer">
+                      {item.track}
+                    </a>
+                  ) : (
+                    <span className="top-ten-track">{item.track}</span>
+                  )}
+                  <span className="top-ten-artist">{item.artist}</span>
+                </li>
+              ))}
+            </ol>
+          </Reveal>
+
+          <Reveal as="div" className="personal-reading" delay={180}>
+            <h3>Currently Reading</h3>
+            <ul>
+              {CURRENTLY_READING.map((book) => (
+                <li key={book.link}>
+                  <img className="reading-cover" src={book.image} alt="" />
+                  <div className="reading-meta">
+                    <a className="reading-title" href={book.link} target="_blank" rel="noreferrer">
+                      {book.title}
+                    </a>
+                    <span className="reading-author">{book.author}</span>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+        </div>
       </div>
     </section>
   );

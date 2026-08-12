@@ -1,7 +1,8 @@
 import ContactForm from "../../components/ContactForm/ContactForm";
 import SocialIcons from "../../components/SocialIcons/SocialIcons";
 import Reveal from "../../components/Reveal/Reveal";
-import StaggerText from "../../components/StaggerText/StaggerText";
+import RippleTitle from "../../components/RippleTitle/RippleTitle";
+import Footer from "../../components/Footer/Footer";
 import "./Contact.css";
 
 export default function Contact() {
@@ -12,7 +13,7 @@ export default function Contact() {
           <Reveal as="p" className="eyebrow">
             [Contact]
           </Reveal>
-          <StaggerText as="h2" className="contact-heading" text="Let's work together" />
+          <RippleTitle id="contact" as="h2" className="contact-heading" text="Let's work together" />
           <Reveal as="a" href="mailto:mendoza.a01@outlook.com" className="contact-email" delay={100}>
             [mendoza.a01@outlook.com]
           </Reveal>
@@ -25,6 +26,8 @@ export default function Contact() {
           <ContactForm />
         </Reveal>
       </div>
+
+      <Footer />
     </section>
   );
 }

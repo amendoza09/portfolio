@@ -1,5 +1,6 @@
 import { useState } from "react";
-import useScrollSpy from "../../hooks/useScrollSpy";
+import { useSectionPager } from "../ScrollStage/SectionPagerContext";
+import SectionLink from "../SectionLink/SectionLink";
 import SocialIcons from "../SocialIcons/SocialIcons";
 import "./Nav.css";
 
@@ -10,11 +11,9 @@ const NAV_ITEMS = [
   { id: "contact", label: "contact" },
 ];
 
-const NAV_IDS = NAV_ITEMS.map((item) => item.id);
-
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const activeId = useScrollSpy(NAV_IDS);
+  const { activeId } = useSectionPager();
 
   const closeMenu = () => setMenuOpen(false);
 
@@ -23,14 +22,14 @@ export default function Nav() {
       <div className="nav-inner container">
         <nav className={`nav-links ${menuOpen ? "nav-links-open" : ""}`}>
           {NAV_ITEMS.map((item) => (
-            <a
+            <SectionLink
               key={item.id}
-              href={`#${item.id}`}
+              to={item.id}
               className={`nav-link ${activeId === item.id ? "nav-link-active" : ""}`}
               onClick={closeMenu}
             >
               {item.label}
-            </a>
+            </SectionLink>
           ))}
         </nav>
 

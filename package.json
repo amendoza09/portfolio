@@ -25,7 +25,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "spotify:tokens": "node scripts/spotify-get-tokens.js",
-    "spotify:fetch": "node scripts/fetch-spotify-top.js"
+    "spotify:fetch": "node scripts/fetch-spotify-top.js",
+    "goodreads:fetch": "node scripts/fetch-goodreads.js"
   },
   "eslintConfig": {
     "extends": [

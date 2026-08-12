@@ -4,17 +4,24 @@
 
 .stagger-text-mask {
   display: inline-block;
+  position: relative;
   overflow: hidden;
   vertical-align: top;
 }
 
 .stagger-text-word {
   display: inline-block;
-  transform: translateY(110%);
-  transition: transform 0.75s var(--ease);
+}
+
+.stagger-text-bar {
+  position: absolute;
+  inset: 0;
+  background: #0f0f0e;
+  transform: translateX(0);
+  transition: transform 0.6s var(--ease);
   will-change: transform;
 }
 
-.stagger-text-word-visible {
-  transform: translateY(0);
+.stagger-text-bar-open {
+  transform: translateX(100%);
 }

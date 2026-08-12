@@ -1,5 +1,5 @@
-// Run by the "Update Spotify Top 10" GitHub Action. Fetches the current
-// top 10 tracks and writes them to src/data/spotifyTopTen.json.
+// Run by the "Update Spotify Top 5" GitHub Action. Fetches the current
+// top 5 tracks and writes them to src/data/spotifyTop.json.
 
 require("dotenv").config();
 
@@ -36,7 +36,7 @@ async function getAccessToken() {
 }
 
 async function getTopTracks(accessToken) {
-  const res = await fetch("https://api.spotify.com/v1/me/top/tracks?limit=10&time_range=short_term", {
+  const res = await fetch("https://api.spotify.com/v1/me/top/tracks?limit=5&time_range=short_term", {
     headers: { Authorization: `Bearer ${accessToken}` },
   });
 
@@ -57,7 +57,7 @@ async function main() {
   const accessToken = await getAccessToken();
   const topTracks = await getTopTracks(accessToken);
 
-  const outPath = path.join(__dirname, "..", "src", "data", "spotifyTopTen.json");
+  const outPath = path.join(__dirname, "..", "src", "data", "spotifyTop.json");
   fs.mkdirSync(path.dirname(outPath), { recursive: true });
   fs.writeFileSync(outPath, `${JSON.stringify(topTracks, null, 2)}\n`);
   console.log(`Wrote ${topTracks.length} tracks to ${outPath}`);

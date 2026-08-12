@@ -7,37 +7,12 @@
   overflow: hidden;
 }
 
-.hero-mark {
-  position: absolute;
-  top: 8%;
-  right: clamp(1rem, 7vw, 7rem);
-  width: clamp(11rem, 28vw, 24rem);
-  aspect-ratio: 1;
-  border: 1px solid var(--color-border);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 0;
-  will-change: transform;
-}
-
-.hero-mark::after {
-  content: "";
-  position: absolute;
-  inset: 12%;
-  border: 1px solid var(--color-border);
-  border-radius: 50%;
-}
-
 .hero-inner {
   max-width: 52rem;
+  margin: 0 auto;
+  text-align: left;
   position: relative;
   z-index: 1;
-}
-
-@media (max-width: 640px) {
-  .hero-mark {
-    display: none;
-  }
 }
 
 .hero-name {
@@ -57,12 +32,15 @@
   color: var(--color-text-dim);
 }
 
-.hero-intro {
-  margin: var(--space-lg) 0 0;
-  max-width: 46ch;
-  font-size: 1.05rem;
-  line-height: 1.65;
-  color: var(--color-text-dim);
+.hero-slogan {
+  margin: var(--space-md) 0 0;
+  max-width: 30ch;
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  font-size: clamp(1.15rem, 2.4vw, 1.6rem);
+  line-height: 1.4;
+  color: var(--color-text);
 }
 
 .hero-actions {

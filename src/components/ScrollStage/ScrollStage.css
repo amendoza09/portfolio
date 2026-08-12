@@ -1,0 +1,25 @@
+html.scroll-stage-active,
+html.scroll-stage-active body {
+  overflow: hidden;
+  height: 100%;
+}
+
+.scroll-stage {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+}
+
+.scroll-slide {
+  position: absolute;
+  inset: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  transition: transform 0.85s var(--ease);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-slide {
+    transition: none;
+  }
+}

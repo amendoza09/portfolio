@@ -1,5 +1,5 @@
 import Reveal from "../../components/Reveal/Reveal";
-import StaggerText from "../../components/StaggerText/StaggerText";
+import RippleTitle from "../../components/RippleTitle/RippleTitle";
 import "./Experience.css";
 
 const EXPERIENCE = [
@@ -46,7 +46,7 @@ export default function Experience() {
         <Reveal as="p" className="eyebrow">
           [Experience]
         </Reveal>
-        <StaggerText as="h2" className="section-heading" text="Where I've worked" />
+        <RippleTitle id="experience" as="h2" className="section-heading" text="Where I've worked" />
 
         <ul className="experience-list">
           {EXPERIENCE.map((item, index) => (

@@ -1,24 +1,28 @@
+import Cursor from "./components/Cursor/Cursor";
 import Nav from "./components/Nav/Nav";
-import Footer from "./components/Footer/Footer";
+import ScrollStage from "./components/ScrollStage/ScrollStage";
+import SectionPagerProvider from "./components/ScrollStage/SectionPagerProvider";
 import Hero from "./sections/Hero/Hero";
 import Work from "./sections/Work/Work";
 import Experience from "./sections/Experience/Experience";
 import Personal from "./sections/Personal/Personal";
 import Contact from "./sections/Contact/Contact";
 
+const SECTIONS = [
+  { id: "home", Component: Hero },
+  { id: "work", Component: Work },
+  { id: "experience", Component: Experience },
+  { id: "personal", Component: Personal },
+  { id: "contact", Component: Contact },
+];
+
 function App() {
   return (
-    <>
+    <SectionPagerProvider sections={SECTIONS}>
+      <Cursor />
       <Nav />
-      <main>
-        <Hero />
-        <Work />
-        <Experience />
-        <Personal />
-        <Contact />
-      </main>
-      <Footer />
-    </>
+      <ScrollStage />
+    </SectionPagerProvider>
   );
 }
 

@@ -13,7 +13,14 @@
   color: var(--color-text-dim);
 }
 
-.personal-top-ten h3 {
+.personal-side {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 5vw, 3rem);
+}
+
+.personal-top-ten h3,
+.personal-reading h3 {
   margin: 0 0 var(--space-md);
   font-family: var(--font-display);
   font-weight: 600;
@@ -59,6 +66,53 @@ a.top-ten-track:hover {
   color: var(--color-text-dim);
   font-size: 0.85rem;
   text-align: right;
+}
+
+.personal-reading ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-reading li {
+  display: grid;
+  grid-template-columns: 2.75rem 1fr;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.personal-reading li:last-child {
+  border-bottom: none;
+}
+
+.reading-cover {
+  width: 2.75rem;
+  height: 4rem;
+  object-fit: cover;
+  flex: none;
+}
+
+.reading-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.reading-title {
+  font-weight: 500;
+  transition: color 0.2s var(--ease);
+}
+
+a.reading-title:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.reading-author {
+  font-size: 0.85rem;
+  color: var(--color-text-dim);
 }
 
 @media (max-width: 720px) {

@@ -40,11 +40,7 @@ export default function ContactForm() {
 
   return (
     <form className="contact-form" ref={formRef} onSubmit={handleSubmit} noValidate>
-      {!IS_CONFIGURED && (
-        <p className="contact-form-notice">
-          Contact form needs EmailJS credentials configured — see .env.example.
-        </p>
-      )}
+      
       <label className="contact-form-field">
         <span>Name</span>
         <input type="text" name="name" required value={fields.name} onChange={handleChange} autoComplete="name" />
