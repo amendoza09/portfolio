@@ -1,3 +1,4 @@
+import { FaInstagram } from "react-icons/fa";
 import Reveal from "../../components/Reveal/Reveal";
 import RippleTitle from "../../components/RippleTitle/RippleTitle";
 import TOP_TRACKS from "../../data/spotifyTop.json";
@@ -17,6 +18,19 @@ export default function Personal() {
             I'm a Computer Science graduate from the University of Georgia (B.S.
             2025), based in Charlotte, NC. [Add a couple lines here about your
             hobbies and interests outside of work.]
+          </Reveal>
+
+          <Reveal as="div" className="personal-band" delay={140}>
+            <h3>Check out my band</h3>
+            <a
+              href="https://www.instagram.com/jibtheband/"
+              target="_blank"
+              rel="noreferrer"
+              className="band-link"
+            >
+              <FaInstagram className="band-icon" aria-hidden="true" />
+              <span>@jibtheband</span>
+            </a>
           </Reveal>
         </div>
 

@@ -20,6 +20,10 @@ export default function Nav() {
   return (
     <header className="nav">
       <div className="nav-inner container">
+        <SectionLink to="home" className="nav-logo" onClick={closeMenu}>
+          [Toni Mendoza]
+        </SectionLink>
+
         <nav className={`nav-links ${menuOpen ? "nav-links-open" : ""}`}>
           {NAV_ITEMS.map((item) => (
             <SectionLink
