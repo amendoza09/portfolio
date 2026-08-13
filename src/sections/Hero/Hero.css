@@ -8,7 +8,7 @@
 }
 
 .hero-inner {
-  max-width: 52rem;
+  max-width: 74rem;
   margin: 0 auto;
   text-align: left;
   position: relative;
@@ -18,10 +18,10 @@
 .hero-name {
   margin: 0;
   font-family: var(--font-display);
-  font-weight: 600;
-  letter-spacing: -0.04em;
-  line-height: 1.2;
-  font-size: clamp(3rem, 10vw, 7rem);
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  line-height: 0.92;
+  font-size: clamp(4rem, 15vw, 12.5rem);
 }
 
 .hero-role {

@@ -16,8 +16,10 @@ export default function Personal() {
           <RippleTitle id="personal" as="h2" className="section-heading" text="Beyond work" />
           <Reveal as="p" className="personal-bio">
             I'm a Computer Science graduate from the University of Georgia (B.S.
-            2025), based in Charlotte, NC. [Add a couple lines here about your
-            hobbies and interests outside of work.]
+            2025), based in Charlotte, NC. Outside of work I play guitar in a
+            band, keep a running list of books I'm probably reading too many
+            of at once, and a playlist that swings from LATIN MAFIA to The
+            Strokes without much warning.
           </Reveal>
 
           <Reveal as="div" className="personal-band" delay={140}>

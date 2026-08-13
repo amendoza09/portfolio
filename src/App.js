@@ -1,3 +1,4 @@
+import AmbientSquares from "./components/AmbientSquares/AmbientSquares";
 import Cursor from "./components/Cursor/Cursor";
 import Nav from "./components/Nav/Nav";
 import ScrollStage from "./components/ScrollStage/ScrollStage";
@@ -19,6 +20,7 @@ const SECTIONS = [
 function App() {
   return (
     <SectionPagerProvider sections={SECTIONS}>
+      <AmbientSquares />
       <Cursor />
       <Nav />
       <ScrollStage />

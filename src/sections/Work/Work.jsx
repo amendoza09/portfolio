@@ -10,7 +10,7 @@ const PROJECTS = [
     category: "Full-Stack · E-Commerce Platform",
     stat: "p95 < 200ms",
     description:
-      "Multi-tenant e-commerce platform with role-scoped REST APIs, JWT auth, and Stripe checkout — serving 3 paying clients with p95 response times under 200ms.",
+      "A multi-tenant storefront built from scratch for three paying clients — role-scoped APIs, JWT auth, and Stripe checkout under the hood, holding p95 response times under 200ms even at peak load.",
     link: "https://shopnest-ma8a.onrender.com/",
   },
   {
@@ -19,7 +19,7 @@ const PROJECTS = [
     category: "Machine Learning Research · University of Georgia",
     stat: "+22% robustness",
     description:
-      "Developed mitigation strategies against deep leakage attacks, improving federated model robustness by 22% across distributed ResNet architectures.",
+      "Federated learning research at UGA: designed mitigation strategies against deep leakage attacks and pushed model robustness up 22% across distributed ResNet setups.",
     link: "https://github.com/amendoza09/gradient_inversion_attack",
   },
   {
@@ -28,7 +28,7 @@ const PROJECTS = [
     category: "Full-Stack · Shared Household Calendar",
     stat: "Real-time sync",
     description:
-      "Real-time shared calendar and chore tracker for households — React/Electron frontend, FastAPI backend, and Supabase Postgres with Socket.IO sync, built to run as a wall-mounted Raspberry Pi kiosk.",
+      "A shared household calendar that actually syncs in real time — React/Electron on the front end, FastAPI and Supabase Postgres behind it, Socket.IO tying it together, running as a wall-mounted kiosk on a Raspberry Pi.",
     link: "https://splanner.net/",
   },
   {
@@ -37,7 +37,7 @@ const PROJECTS = [
     category: "Machine Learning · Python",
     stat: "XGBoost model",
     description:
-      "Python pipeline that pulls historical match data via the Kaggle API, engineers features, and trains an XGBoost model to simulate and predict World Cup match outcomes.",
+      "Pulls historical match data straight from the Kaggle API, engineers its own features, and trains an XGBoost model to simulate World Cup outcomes before a ball is kicked.",
     link: "https://github.com/amendoza09/worldcup-predictor",
   },
   {
@@ -46,7 +46,7 @@ const PROJECTS = [
     category: "Frontend · React",
     stat: "25/5 focus cycle",
     description:
-      "Single-page productivity timer built with React and Tailwind CSS, alternating 25-minute focus sessions with 5-minute breaks to structure deep work.",
+      "A no-frills productivity timer — 25 minutes on, 5 minutes off — built with React and Tailwind CSS to keep deep work sessions honest.",
     link: "https://www.thepomotechnique.com/",
   },
   {
@@ -55,7 +55,7 @@ const PROJECTS = [
     category: "Frontend · Freelance Client Site",
     stat: "React + Tailwind",
     description:
-      "Custom website built for a floral business client — a React and Tailwind CSS frontend showcasing their catalog and brand.",
+      "Freelance build for a floral business client — a React and Tailwind CSS site that puts their catalog and brand front and center.",
     link: "https://lauren-portfolio-7sqr.onrender.com/",
   },
 ];

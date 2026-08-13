@@ -38,10 +38,6 @@ export default function Nav() {
         </nav>
 
         <div className="nav-right">
-          <div className="nav-socials">
-            <SocialIcons />
-          </div>
-
           <button
             type="button"
             className={`nav-toggle ${menuOpen ? "nav-toggle-open" : ""}`}
