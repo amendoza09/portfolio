@@ -2,9 +2,7 @@ import { createContext, useContext } from "react";
 
 const SectionPagerContext = createContext({
   sections: [],
-  activeIndex: 0,
   activeId: null,
-  slideRefs: { current: [] },
   goToId: () => {},
 });
 

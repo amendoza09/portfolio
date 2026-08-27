@@ -1,6 +1,7 @@
 import { FaInstagram } from "react-icons/fa";
 import Reveal from "../../components/Reveal/Reveal";
 import RippleTitle from "../../components/RippleTitle/RippleTitle";
+import Footer from "../../components/Footer/Footer";
 import TOP_TRACKS from "../../data/spotifyTop.json";
 import CURRENTLY_READING from "../../data/goodreadsCurrentlyReading.json";
 import "./Personal.css";
@@ -74,6 +75,8 @@ export default function Personal() {
           </Reveal>
         </div>
       </div>
+
+      <Footer />
     </section>
   );
 }

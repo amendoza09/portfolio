@@ -8,9 +8,15 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: var(--space-sm);
+  gap: var(--space-md);
   font-size: 0.8rem;
   color: var(--color-text-dim);
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .footer-top {

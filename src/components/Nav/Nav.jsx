@@ -8,7 +8,6 @@ const NAV_ITEMS = [
   { id: "work", label: "work" },
   { id: "experience", label: "experience" },
   { id: "personal", label: "personal" },
-  { id: "contact", label: "contact" },
 ];
 
 export default function Nav() {
