@@ -4,6 +4,9 @@
   left: 0;
   right: 0;
   z-index: 100;
+  background: rgba(237, 233, 223, 0.72);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  backdrop-filter: blur(10px) saturate(100%);
 }
 
 .nav-inner {
@@ -11,8 +14,8 @@
   align-items: center;
   justify-content: flex-end;
   gap: 3rem;
-  padding: 2rem 0;
-  min-height: 4.5rem;
+  padding: 1rem 0;
+  min-height: 4rem;
 }
 
 .nav-logo {
@@ -32,8 +35,8 @@
 .nav-links {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  column-gap: 5.5rem;
-  row-gap: 1.5rem;
+  column-gap: 5rem;
+  row-gap: 1rem;
 }
 
 .nav-link {
@@ -142,7 +145,7 @@
     left: 0;
     right: 0;
     gap: 0;
-    background: var(--color-bg);
+    background: rgba(237, 233, 223, 0.94);
     border-bottom: 1px solid var(--color-border);
     max-height: 0;
     overflow: hidden;

@@ -26,22 +26,6 @@
   margin: 0;
 }
 
-.hero-name-dissolve {
-  position: relative;
-  display: inline-block;
-}
-
-.hero-name-solid {
-  display: inline-block;
-  will-change: opacity;
-}
-
-.hero-name-particles {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-}
-
 .hero-name {
   margin: 0;
   font-family: var(--font-display);

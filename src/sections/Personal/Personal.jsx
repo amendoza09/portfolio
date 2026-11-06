@@ -14,13 +14,15 @@ export default function Personal() {
           <Reveal as="p" className="eyebrow">
             [Personal]
           </Reveal>
-          <RippleTitle id="personal" as="h2" className="section-heading" text="Beyond work" />
+          <RippleTitle id="personal" as="h2" className="section-heading" text="About Me" />
           <Reveal as="p" className="personal-bio">
             I'm a Computer Science graduate from the University of Georgia (B.S.
-            2025), based in Charlotte, NC. Outside of work I play guitar in a
-            band, keep a running list of books I'm probably reading too many
-            of at once, and a playlist that swings from LATIN MAFIA to The
-            Strokes without much warning.
+            2025), based in Charlotte, NC. I'm currently at Capgemini as a Sofware Engineer, 
+            where I work on various projects with clients within the financial industry.
+            <br></br>
+            <br></br>
+            Outside of work, I enjoy playing music with my band, exploring new hiking trails, 
+            and reading challenging books.
           </Reveal>
 
           <Reveal as="div" className="personal-band" delay={140}>

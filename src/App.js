@@ -1,5 +1,4 @@
 import Cursor from "./components/Cursor/Cursor";
-import FloatingParticles from "./components/FloatingParticles/FloatingParticles";
 import Nav from "./components/Nav/Nav";
 import ScrollStage from "./components/ScrollStage/ScrollStage";
 import SectionPagerProvider from "./components/ScrollStage/SectionPagerProvider";
@@ -18,7 +17,6 @@ const SECTIONS = [
 function App() {
   return (
     <SectionPagerProvider sections={SECTIONS}>
-      <FloatingParticles />
       <Cursor />
       <Nav />
       <ScrollStage />

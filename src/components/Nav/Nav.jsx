@@ -5,7 +5,7 @@ import SocialIcons from "../SocialIcons/SocialIcons";
 import "./Nav.css";
 
 const NAV_ITEMS = [
-  { id: "work", label: "work" },
+  { id: "work", label: "projects" },
   { id: "experience", label: "experience" },
   { id: "personal", label: "personal" },
 ];

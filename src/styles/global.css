@@ -82,7 +82,7 @@ ol {
 }
 
 .section {
-  padding: clamp(4.5rem, 11vw, 8.5rem) 0;
+  padding: clamp(4.5rem, 5vw, 8.5rem) 0;
 }
 
 .eyebrow {

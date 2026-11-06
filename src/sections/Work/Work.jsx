@@ -8,16 +8,16 @@ const PROJECTS = [
     index: "01",
     name: "ShopNest",
     category: "Full-Stack · E-Commerce Platform",
-    stat: "p95 < 200ms",
+    stat: "React + Node.js + Stripe",
     description:
-      "A multi-tenant storefront built from scratch for three paying clients — role-scoped APIs, JWT auth, and Stripe checkout under the hood, holding p95 response times under 200ms even at peak load.",
+      "A business dashboard where small-business owners manage products, orders, and customer emails from one workspace, with Stripe checkout built in. Built with React, Express, and Supabase.",
     link: "https://shopnest-ma8a.onrender.com/",
   },
   {
     index: "02",
     name: "Deep Leakage Attack",
     category: "Machine Learning Research · University of Georgia",
-    stat: "+22% robustness",
+    stat: "Python + CNN's",
     description:
       "Federated learning research at UGA: designed mitigation strategies against deep leakage attacks and pushed model robustness up 22% across distributed ResNet setups.",
     link: "https://github.com/amendoza09/gradient_inversion_attack",
@@ -46,7 +46,7 @@ const PROJECTS = [
     category: "Frontend · React",
     stat: "25/5 focus cycle",
     description:
-      "A no-frills productivity timer — 25 minutes on, 5 minutes off — built with React and Tailwind CSS to keep deep work sessions honest.",
+      "A focus timer that splits work into 25-minute sessions with 5-minute breaks, following the Pomodoro Technique. Built with React and Tailwind CSS.",
     link: "https://www.thepomotechnique.com/",
   },
   {

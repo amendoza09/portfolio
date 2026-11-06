@@ -10,9 +10,16 @@ const EXPERIENCE = [
     summary: "",
   },
   {
+    role: "Mobile Software Developer (Part-Time)",
+    org: "TradeCraft",
+    period: "June 2026 - Present",
+    summary:
+      "Extend and refine the app's React Native front end, with some backend work in Spring. Improved the UI to make the app easier to use, added Spanish localization, and fixed numerous UI bugs affecting iOS users.",
+  },
+  {
     role: "Freelance Software Engineer",
     org: "Self-Employed · Remote",
-    period: "Aug 2025 — Present",
+    period: "Aug 2025 — May 2026",
     summary:
       "Own the full project lifecycle for client engagements — scoping, API design, and deployment — building distributed REST APIs in Python (FastAPI) and PostgreSQL. Cut time-to-launch ~40% across 3 production deployments.",
   },
