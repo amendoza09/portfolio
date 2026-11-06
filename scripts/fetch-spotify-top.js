@@ -1,7 +1,9 @@
 // Run by the "Update Spotify Top 5" GitHub Action. Fetches the current
 // top 5 tracks and writes them to src/data/spotifyTop.json.
 
-require("dotenv").config();
+// Local runs read .env; GitHub Actions sets CI=true and passes secrets directly,
+// so it skips dotenv and doesn't need an npm install.
+if (process.env.CI !== "true") require("dotenv").config();
 
 const fs = require("fs");
 const path = require("path");
