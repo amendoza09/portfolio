@@ -3,7 +3,6 @@ import Reveal from "../../components/Reveal/Reveal";
 import RippleTitle from "../../components/RippleTitle/RippleTitle";
 import Footer from "../../components/Footer/Footer";
 import TOP_TRACKS from "../../data/spotifyTop.json";
-import CURRENTLY_READING from "../../data/goodreadsCurrentlyReading.json";
 import "./Personal.css";
 
 export default function Personal() {
@@ -57,23 +56,6 @@ export default function Personal() {
                 </li>
               ))}
             </ol>
-          </Reveal>
-
-          <Reveal as="div" className="personal-reading" delay={180}>
-            <h3>Currently Reading</h3>
-            <ul>
-              {CURRENTLY_READING.map((book) => (
-                <li key={book.link}>
-                  <img className="reading-cover" src={book.image} alt="" />
-                  <div className="reading-meta">
-                    <a className="reading-title" href={book.link} target="_blank" rel="noreferrer">
-                      {book.title}
-                    </a>
-                    <span className="reading-author">{book.author}</span>
-                  </div>
-                </li>
-              ))}
-            </ul>
           </Reveal>
         </div>
       </div>
